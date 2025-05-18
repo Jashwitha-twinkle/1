@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Monument';
+    src: url('fonts/MonumentExtended-Regular.otf') format('opentype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(45, 144, 147);
+    display: flex;
+}
+#part1{
+    height: 100%;
+    width: 26%;
+    /* background-color: red; */
+}
+#part2{
+    height: 100%;
+    width: 67%;
+    background-color: rgb(28, 223, 230);
+    background-image: url(https://plus.unsplash.com/premium_photo-1675200124904-dfadce24119f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: top;
+}
+#overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(17, 66, 68, 0.498);
+}
+#part3{
+    height: 100%;
+    width: 7%;
+    /* background-color: rgb(86, 230, 13); */
+}
+#text_div{
+    /* height: 300px; */
+    position: absolute;
+    width: 600px;
+    /* background-color: red; */
+    left: 5%;
+    top: 30%;
+    transform: (0, -50%);
+}
+#text_div>h1{
+    font-size: 95px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 800px;
+    letter-spacing: 30px;
+    line-height: 78px;
+    color: white;
+    text-transform: uppercase;
+}
+#small-image-div{
+    height: 400px;
+    width: 300px;
+    background-color: red;
+    position: absolute;
+    top: 20%;
+    right: 4%;
+    transform: (0, -50%);
+    background-image: url(https://plus.unsplash.com/premium_photo-1670282393309-70fd7f8eb1ef?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: top;
+}
+#vertical-text{
+    position: absolute;
+    transform: rotate(90deg);
+    /* transform-origin: 0% 0%; */
+    right: -42%;
+    top: 90%;
+    width: 100%;
+    /* background-color: red; */
+}
+#vertical-text>h1{
+    font-size: 70px;
+    font-weight: 580;
+    font-family: 'Bebas Neue', sans-serif;
+    -webkit-text-stroke-width: 0.5px; /*letters ke upar boundary banaega*/
+    -webkit-text-stroke-color: white;
+    color: transparent;
+    letter-spacing: 20px;
+    /* text-transform: uppercase; */
+}
+#nav{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    left: 5%;
+    top: 5%;
+    /* background-color: red; */
+}
+#nav img{
+    height:60px;
+}
+#nav h5{
+    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+}
